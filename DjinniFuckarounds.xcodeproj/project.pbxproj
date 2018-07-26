@@ -1,0 +1,128 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXFileReference section */
+		A04077D82109C94E008037EB /* Declarations.idl */ = {isa = PBXFileReference; lastKnownFileType = text; path = Declarations.idl; sourceTree = "<group>"; };
+		A04077D92109CA67008037EB /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		A04077EB2109CFD0008037EB /* DFDjinnyFuckaroundsAbstract.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DFDjinnyFuckaroundsAbstract.h; sourceTree = "<group>"; };
+		A04077EC2109CFD0008037EB /* DFDjinnyFuckaroundsCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DFDjinnyFuckaroundsCore.h; sourceTree = "<group>"; };
+		A04077ED2109CFD0008037EB /* DFDjinnyFuckaroundsCore+Private.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "DFDjinnyFuckaroundsCore+Private.mm"; sourceTree = "<group>"; };
+		A04077EE2109CFD0008037EB /* DFDjinnyFuckaroundsAbstract+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DFDjinnyFuckaroundsAbstract+Private.h"; sourceTree = "<group>"; };
+		A04077EF2109CFD0008037EB /* DFDjinnyFuckaroundsCore+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DFDjinnyFuckaroundsCore+Private.h"; sourceTree = "<group>"; };
+		A04077F02109CFD0008037EB /* DFDjinnyFuckaroundsAbstract+Private.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "DFDjinnyFuckaroundsAbstract+Private.mm"; sourceTree = "<group>"; };
+		A04077F22109CFD0008037EB /* djinny_fuckarounds_abstract.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = djinny_fuckarounds_abstract.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		A04077E02109CED9008037EB /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A04077E92109CF58008037EB /* Declarations */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A04077E12109CEE4008037EB /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				A04077F12109CFD0008037EB /* cpp-gen */,
+				A04077EA2109CFD0008037EB /* objc-gen */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		A04077E92109CF58008037EB /* Declarations */ = {
+			isa = PBXGroup;
+			children = (
+				A04077D82109C94E008037EB /* Declarations.idl */,
+			);
+			path = Declarations;
+			sourceTree = "<group>";
+		};
+		A04077EA2109CFD0008037EB /* objc-gen */ = {
+			isa = PBXGroup;
+			children = (
+				A04077EB2109CFD0008037EB /* DFDjinnyFuckaroundsAbstract.h */,
+				A04077EC2109CFD0008037EB /* DFDjinnyFuckaroundsCore.h */,
+				A04077ED2109CFD0008037EB /* DFDjinnyFuckaroundsCore+Private.mm */,
+				A04077EE2109CFD0008037EB /* DFDjinnyFuckaroundsAbstract+Private.h */,
+				A04077EF2109CFD0008037EB /* DFDjinnyFuckaroundsCore+Private.h */,
+				A04077F02109CFD0008037EB /* DFDjinnyFuckaroundsAbstract+Private.mm */,
+			);
+			path = "objc-gen";
+			sourceTree = "<group>";
+		};
+		A04077F12109CFD0008037EB /* cpp-gen */ = {
+			isa = PBXGroup;
+			children = (
+				A04077F22109CFD0008037EB /* djinny_fuckarounds_abstract.hpp */,
+			);
+			path = "cpp-gen";
+			sourceTree = "<group>";
+		};
+		A04D44892109C8DC00CDDA74 = {
+			isa = PBXGroup;
+			children = (
+				A04077E12109CEE4008037EB /* Lib */,
+				A04077E02109CED9008037EB /* Sources */,
+				A04077D92109CA67008037EB /* Makefile */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		A04D448A2109C8DC00CDDA74 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+			};
+			buildConfigurationList = A04D448D2109C8DC00CDDA74 /* Build configuration list for PBXProject "DjinniFuckarounds" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A04D44892109C8DC00CDDA74;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		A04D448E2109C8DC00CDDA74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		A04D448F2109C8DC00CDDA74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A04D448D2109C8DC00CDDA74 /* Build configuration list for PBXProject "DjinniFuckarounds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A04D448E2109C8DC00CDDA74 /* Debug */,
+				A04D448F2109C8DC00CDDA74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A04D448A2109C8DC00CDDA74 /* Project object */;
+}

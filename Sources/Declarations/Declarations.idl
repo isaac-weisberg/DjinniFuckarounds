@@ -1,0 +1,3 @@
+djinny_fuckarounds_abstract = interface +c {
+    get_prime_number(index: i32): i32;
+}
