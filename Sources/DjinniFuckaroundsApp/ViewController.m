@@ -16,20 +16,22 @@ NSInteger preLoadingDifferenceThreshold = 0;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.primeNumbers = [NSArray init];
+    self.primeNumbers = @[];
     self.primeCreator = [DFDjinniFuckaroundsAbstract make];
     self.operationQueue = [NSOperationQueue new];
     self.operationQueue.maxConcurrentOperationCount = 1;
     self.primeCellIdentifier = @"PrimeCell";
     [self.collectionView setDataSource: self];
+    [self requestMore];
 }
 
 - (nonnull __kindof UICollectionViewCell *) collectionView:(nonnull UICollectionView *)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath {
     PrimeCell* cell = [collectionView dequeueReusableCellWithReuseIdentifier: [PrimeCell reusableIdentifier] forIndexPath: indexPath];
     NSString* value = self.primeNumbers[indexPath.row];
     [cell updateLabelWith: value];
-    if (indexPath.row + preLoadingDifferenceThreshold == self.primeNumbers.count) {
+    if (indexPath.row + preLoadingDifferenceThreshold == self.primeNumbers.count - 1) {
         [self requestMore];
+        NSLog(@"Have requested more stuff");
     }
     return cell;
 }
@@ -53,7 +55,9 @@ NSInteger preLoadingDifferenceThreshold = 0;
             array = [array arrayByAddingObject:value];
         }
         shelf.primeNumbers = [shelf.primeNumbers arrayByAddingObjectsFromArray: array];
-        [shelf.collectionView reloadData];
+        [NSOperationQueue.mainQueue addOperationWithBlock: ^{ // FIXME: potential race condition
+            [shelf.collectionView reloadData];
+        }];
         shelf.operation = nil;
     }];
     [self.operationQueue addOperation: self.operation];
