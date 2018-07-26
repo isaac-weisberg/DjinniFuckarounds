@@ -19,7 +19,8 @@
 
 - (nonnull __kindof UICollectionViewCell *)collectionView:(nonnull UICollectionView *)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath {
     PrimeCell* cell = [collectionView dequeueReusableCellWithReuseIdentifier: [PrimeCell reusableIdentifier] forIndexPath: indexPath];
-    
+    NSString* value = self.primeNumbers[indexPath.row];
+    [cell updateLabelWith: value];
     return cell;
 }
 
