@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A04078032109D341008037EB /* DjinniFuckaroundsCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04078022109D341008037EB /* DjinniFuckaroundsCore.swift */; };
 		A04078072109D363008037EB /* DFDjinniFuckaroundsAbstract+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = A04077F42109D1BF008037EB /* DFDjinniFuckaroundsAbstract+Private.mm */; };
 		A040780F2109D3A3008037EB /* DJIProxyCaches.mm in Sources */ = {isa = PBXBuildFile; fileRef = A040780B2109D3A3008037EB /* DJIProxyCaches.mm */; };
 		A04078102109D3A3008037EB /* DJIError.mm in Sources */ = {isa = PBXBuildFile; fileRef = A040780D2109D3A3008037EB /* DJIError.mm */; };
@@ -35,7 +34,6 @@
 		A04077F82109D1C0008037EB /* djinni_fuckarounds_abstract.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = djinni_fuckarounds_abstract.hpp; sourceTree = "<group>"; };
 		A04077FA2109D2F9008037EB /* DjinniFuckaroundsCore.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DjinniFuckaroundsCore.hpp; sourceTree = "<group>"; };
 		A04077FF2109D341008037EB /* libDjinniFuckaroundsCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDjinniFuckaroundsCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A04078022109D341008037EB /* DjinniFuckaroundsCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DjinniFuckaroundsCore.swift; sourceTree = "<group>"; };
 		A04078092109D3A3008037EB /* DJICppWrapperCache+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DJICppWrapperCache+Private.h"; sourceTree = "<group>"; };
 		A040780A2109D3A3008037EB /* DJIError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJIError.h; sourceTree = "<group>"; };
 		A040780B2109D3A3008037EB /* DJIProxyCaches.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DJIProxyCaches.mm; sourceTree = "<group>"; };
@@ -124,14 +122,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A04078012109D341008037EB /* DjinniFuckaroundsCore */ = {
-			isa = PBXGroup;
-			children = (
-				A04078022109D341008037EB /* DjinniFuckaroundsCore.swift */,
-			);
-			path = DjinniFuckaroundsCore;
-			sourceTree = "<group>";
-		};
 		A04078082109D3A3008037EB /* objc */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,7 +141,6 @@
 				A04077E12109CEE4008037EB /* Lib */,
 				A04077E02109CED9008037EB /* Sources */,
 				A04077D92109CA67008037EB /* Makefile */,
-				A04078012109D341008037EB /* DjinniFuckaroundsCore */,
 				A04078002109D341008037EB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -213,7 +202,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A04078102109D3A3008037EB /* DJIError.mm in Sources */,
-				A04078032109D341008037EB /* DjinniFuckaroundsCore.swift in Sources */,
 				A04078152109D42E008037EB /* DjinniFuckaroundsCore.cpp in Sources */,
 				A04078072109D363008037EB /* DFDjinniFuckaroundsAbstract+Private.mm in Sources */,
 				A040780F2109D3A3008037EB /* DJIProxyCaches.mm in Sources */,

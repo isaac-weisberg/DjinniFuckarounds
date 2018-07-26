@@ -1,3 +1,5 @@
 djinni_fuckarounds_abstract = interface +c {
+    static make(): djinni_fuckarounds_abstract;
+
     get_prime_number(index: i32): i32;
 }
