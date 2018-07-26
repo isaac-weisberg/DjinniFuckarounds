@@ -1,4 +1,4 @@
-DJJINNI_PATH=../djinni/src/run
+DJINNI_PATH=../djinni/src/run
 JAVA_OUTPUT_FOLDER=./Lib/java-gen/
 CPP_OUTPUT_FOLDER=./Lib/cpp-gen/
 JNI_OUTPUT_FOLDER=./Lib/jni-gen/
@@ -10,7 +10,7 @@ default:
 	echo "No default action\n\n\tRule 'build-decl' available. Run 'make build-decl'" 
 
 build-decl:
-	$(DJJINNI_PATH) \
+	$(DJINNI_PATH) \
 		\
 		--cpp-out $(CPP_OUTPUT_FOLDER) \
 		\
