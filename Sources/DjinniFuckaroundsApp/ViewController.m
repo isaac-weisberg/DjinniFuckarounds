@@ -31,7 +31,6 @@ NSInteger preLoadingDifferenceThreshold = 0;
     [cell updateLabelWith: value];
     if (indexPath.row + preLoadingDifferenceThreshold == self.primeNumbers.count - 1) {
         [self requestMore];
-        NSLog(@"Have requested more stuff");
     }
     return cell;
 }
