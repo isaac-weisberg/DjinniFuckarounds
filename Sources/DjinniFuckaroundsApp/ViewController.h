@@ -9,6 +9,9 @@
 
 @interface ViewController : UIViewController<UICollectionViewDataSource>
 
+@property (strong, nonatomic) NSOperationQueue* operationQueue;
+@property (strong, nonatomic) NSOperation* operation;
+@property (strong, nonatomic) DFDjinniFuckaroundsAbstract* primeCreator;
 @property (strong, nonatomic) NSArray* primeNumbers;
 @property (strong, nonatomic) NSString* primeCellIdentifier;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
