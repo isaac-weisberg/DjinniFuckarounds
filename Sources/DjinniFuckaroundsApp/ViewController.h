@@ -13,7 +13,6 @@
 @property (strong, nonatomic) NSOperation* operation;
 @property (strong, nonatomic) DFDjinniFuckaroundsAbstract* primeCreator;
 @property (strong, nonatomic) NSArray* primeNumbers;
-@property (strong, nonatomic) NSString* primeCellIdentifier;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @end

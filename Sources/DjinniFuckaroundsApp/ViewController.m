@@ -20,7 +20,6 @@ NSInteger preLoadingDifferenceThreshold = 0;
     self.primeCreator = [DFDjinniFuckaroundsAbstract make];
     self.operationQueue = [NSOperationQueue new];
     self.operationQueue.maxConcurrentOperationCount = 1;
-    self.primeCellIdentifier = @"PrimeCell";
     [self.collectionView setDataSource: self];
     [self requestMore];
 }
